@@ -5,6 +5,7 @@ var fs = require("fs");
 var jquery = fs.readFileSync("./public/javascripts/jquery-1.9.1.min.js", "utf-8");
 
 exports.list = function (req, res) {
+  //dataUrl:http://www.china.com.cn/node_7187073.htm
   //get data
   xmlUrl = req.query.xmlSrc;
   //post data
