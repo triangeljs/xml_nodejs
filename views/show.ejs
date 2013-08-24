@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title><%= title %></title>
+        <link><%= link %></link>
+        <description><%= description %></description>
+        <% for(var i=0; i<item.length; i++) { %>
+        <item>
+            <title><%= item[i].title %></title>
+            <link><%= item[i].link %></link>
+            <description><%= item[i].description %></description>
+            <author><%= item[i].author %></author>
+            <pubDate><%= item[i].pubDate %></pubDate>
+        </item>
+        <% } %>
+    </channel>
+</rss>
