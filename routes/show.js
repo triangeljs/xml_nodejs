@@ -25,7 +25,6 @@ exports.list = function (req, res) {
       var $ = window.$;
       JSON.item = [];
       $('ol li').each(function(index, element){
-        console.log(index);
         JSON.item.push({
           title : $(this).find('h1').html(),
           link : $(this).find('h5').html(),
